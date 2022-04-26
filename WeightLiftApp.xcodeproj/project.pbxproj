@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34710CD728187B4500288A28 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34710CD528187B4500288A28 /* Day+CoreDataClass.swift */; };
-		34710CD828187B4500288A28 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34710CD628187B4500288A28 /* Day+CoreDataProperties.swift */; };
 		8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFA281875FD00992FB5 /* AppDelegate.swift */; };
 		8403BAFD281875FD00992FB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFC281875FD00992FB5 /* SceneDelegate.swift */; };
 		8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFE281875FD00992FB5 /* ViewController.swift */; };
@@ -19,8 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34710CD528187B4500288A28 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
-		34710CD628187B4500288A28 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8403BAF7281875FD00992FB5 /* WeightLiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightLiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403BAFA281875FD00992FB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8403BAFC281875FD00992FB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +42,6 @@
 		8403BAEE281875FD00992FB5 = {
 			isa = PBXGroup;
 			children = (
-				34710CD528187B4500288A28 /* Day+CoreDataClass.swift */,
-				34710CD628187B4500288A28 /* Day+CoreDataProperties.swift */,
 				8403BAF9281875FD00992FB5 /* WeightLiftApp */,
 				8403BAF8281875FD00992FB5 /* Products */,
 			);
@@ -149,10 +143,8 @@
 			files = (
 				8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */,
 				8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */,
-				34710CD828187B4500288A28 /* Day+CoreDataProperties.swift in Sources */,
 				8403BB05281875FD00992FB5 /* WeightLiftApp.xcdatamodeld in Sources */,
 				8403BAFD281875FD00992FB5 /* SceneDelegate.swift in Sources */,
-				34710CD728187B4500288A28 /* Day+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
