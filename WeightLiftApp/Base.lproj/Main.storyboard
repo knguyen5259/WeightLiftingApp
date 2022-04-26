@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondVC-->
         <scene sceneID="qLg-Fp-n5H">
             <objects>
-                <viewController id="Qi7-an-jSf" sceneMemberID="viewController">
+                <viewController id="Qi7-an-jSf" customClass="SecondVC" customModule="WeightLiftApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oKS-ku-Alw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

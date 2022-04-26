@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         tableView.dataSource = self
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
+        let nvc = segue.destination as! SecondVC
 
     }
 
