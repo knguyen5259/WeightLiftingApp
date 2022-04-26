@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025FAC4828187F9900D7DF02 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FAC4728187F9900D7DF02 /* SecondVC.swift */; };
+		34710CD728187B4500288A28 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34710CD528187B4500288A28 /* Day+CoreDataClass.swift */; };
+		34710CD828187B4500288A28 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34710CD628187B4500288A28 /* Day+CoreDataProperties.swift */; };
 		8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFA281875FD00992FB5 /* AppDelegate.swift */; };
 		8403BAFD281875FD00992FB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFC281875FD00992FB5 /* SceneDelegate.swift */; };
 		8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFE281875FD00992FB5 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		025FAC4728187F9900D7DF02 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		34710CD528187B4500288A28 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		34710CD628187B4500288A28 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8403BAF7281875FD00992FB5 /* WeightLiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightLiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403BAFA281875FD00992FB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8403BAFC281875FD00992FB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 				8403BAFC281875FD00992FB5 /* SceneDelegate.swift */,
 				8403BAFE281875FD00992FB5 /* ViewController.swift */,
 				8403BB00281875FD00992FB5 /* Main.storyboard */,
+				025FAC4728187F9900D7DF02 /* SecondVC.swift */,
 				8403BB062818760100992FB5 /* Assets.xcassets */,
 				8403BB082818760100992FB5 /* LaunchScreen.storyboard */,
 				8403BB0B2818760100992FB5 /* Info.plist */,
@@ -143,6 +150,8 @@
 			files = (
 				8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */,
 				8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */,
+				025FAC4828187F9900D7DF02 /* SecondVC.swift in Sources */,
+				34710CD828187B4500288A28 /* Day+CoreDataProperties.swift in Sources */,
 				8403BB05281875FD00992FB5 /* WeightLiftApp.xcdatamodeld in Sources */,
 				8403BAFD281875FD00992FB5 /* SceneDelegate.swift in Sources */,
 			);
