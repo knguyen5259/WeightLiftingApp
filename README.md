@@ -3,7 +3,7 @@
 ![](https://img.shields.io/github/forks/knguyen5259/weightliftingapp)
 ![](https://img.shields.io/github/stars/knguyen5259/weightliftingapp)
 ![](https://img.shields.io/github/license/knguyen5259/weightliftingapp)
-![](https://img.shields.io/twitter/url?style=social)
+
 </br>Most epicness WeightLiftingApp in the world.
 It will be able to track your workout.
 You can choose what you want to workout.
