@@ -15,6 +15,8 @@
 		8403BB05281875FD00992FB5 /* WeightLiftApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8403BB03281875FD00992FB5 /* WeightLiftApp.xcdatamodeld */; };
 		8403BB072818760100992FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8403BB062818760100992FB5 /* Assets.xcassets */; };
 		8403BB0A2818760100992FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403BB082818760100992FB5 /* LaunchScreen.storyboard */; };
+		8456B496281B1206004533FF /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B494281B1206004533FF /* Day+CoreDataClass.swift */; };
+		8456B497281B1206004533FF /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B495281B1206004533FF /* Day+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8403BB062818760100992FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8403BB092818760100992FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8403BB0B2818760100992FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8456B494281B1206004533FF /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8456B495281B1206004533FF /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 		8403BAEE281875FD00992FB5 = {
 			isa = PBXGroup;
 			children = (
+				8456B494281B1206004533FF /* Day+CoreDataClass.swift */,
+				8456B495281B1206004533FF /* Day+CoreDataProperties.swift */,
 				8403BAF9281875FD00992FB5 /* WeightLiftApp */,
 				8403BAF8281875FD00992FB5 /* Products */,
 			);
@@ -144,11 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8456B496281B1206004533FF /* Day+CoreDataClass.swift in Sources */,
 				8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */,
 				8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */,
 				025FAC4828187F9900D7DF02 /* SecondVC.swift in Sources */,
 				8403BB05281875FD00992FB5 /* WeightLiftApp.xcdatamodeld in Sources */,
 				8403BAFD281875FD00992FB5 /* SceneDelegate.swift in Sources */,
+				8456B497281B1206004533FF /* Day+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
