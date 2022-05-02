@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ViewController: UIViewController, UITableViewDataSource {
     
@@ -31,5 +32,13 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //
     }
-
+    @IBAction func searchButtonPressed(_ sender: UIButton) {
+        if let url = URL(string: "https://www.youtube.com/watch?v=cQO2V65eK3M&t=205s") {
+            let safariVC = SFSafariViewController(url: url)
+            
+            present(safariVC, animated: true, completion: nil)
+        }
+            
+    }
+    
 }
