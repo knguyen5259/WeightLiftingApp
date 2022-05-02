@@ -266,6 +266,14 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="kFe-RJ-d2Z"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="workoutFiveLabel" destination="ooq-aF-73a" id="hXV-5O-VEU"/>
+                        <outlet property="workoutFourLabel" destination="iRt-br-1gu" id="hdM-pR-try"/>
+                        <outlet property="workoutOneLabel" destination="o1F-vn-ynZ" id="KEl-8P-qwx"/>
+                        <outlet property="workoutSixLabel" destination="ooq-aF-73a" id="SFH-D3-gtQ"/>
+                        <outlet property="workoutThreeLabel" destination="BXV-l9-b2e" id="YiL-Qg-zWQ"/>
+                        <outlet property="workoutTwoLabel" destination="PsY-0h-bRq" id="0xJ-3K-dc9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ass-Ap-MpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="eU2-Eq-95q"/>
