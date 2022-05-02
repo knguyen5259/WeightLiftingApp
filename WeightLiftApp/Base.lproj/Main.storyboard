@@ -286,17 +286,43 @@
             </objects>
             <point key="canvasLocation" x="1882.608695652174" y="81.696428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Thrid View Controller-->
         <scene sceneID="nBE-vf-Qr4">
             <objects>
-                <viewController id="kmT-SG-SgQ" sceneMemberID="viewController">
+                <viewController id="kmT-SG-SgQ" customClass="ThridViewController" customModule="WeightLiftApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X7C-26-fKh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yNb-3p-1s7">
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCellTwo" id="IUt-7n-bBN">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IUt-7n-bBN" id="fXd-78-YYO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2wt-sF-823"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2wt-sF-823" firstAttribute="bottom" secondItem="yNb-3p-1s7" secondAttribute="bottom" id="56d-uc-wJF"/>
+                            <constraint firstItem="yNb-3p-1s7" firstAttribute="leading" secondItem="2wt-sF-823" secondAttribute="leading" id="8Pv-dR-Pgh"/>
+                            <constraint firstItem="2wt-sF-823" firstAttribute="trailing" secondItem="yNb-3p-1s7" secondAttribute="trailing" id="NbV-0F-BFa"/>
+                            <constraint firstItem="yNb-3p-1s7" firstAttribute="top" secondItem="2wt-sF-823" secondAttribute="top" constant="100" id="eOx-qZ-ETU"/>
+                            <constraint firstItem="yNb-3p-1s7" firstAttribute="top" secondItem="2wt-sF-823" secondAttribute="top" constant="50" id="mgC-8T-YYS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q5l-WR-led"/>
+                    <connections>
+                        <outlet property="tableViewTwo" destination="yNb-3p-1s7" id="erh-Zp-Blr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpK-Jp-jjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
