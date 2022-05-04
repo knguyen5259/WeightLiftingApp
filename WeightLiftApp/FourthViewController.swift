@@ -16,7 +16,6 @@ class FourthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     var currentLocation: CLLocation!
     
     var Gyms: [MKMapItem] = []
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +29,10 @@ class FourthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
 
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currentLocation = locations[0]
     }
     
     @IBAction func whenZoomButtonPressed(_ sender: Any) {
