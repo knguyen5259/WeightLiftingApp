@@ -327,7 +327,19 @@
                             <constraint firstItem="yNb-3p-1s7" firstAttribute="top" secondItem="2wt-sF-823" secondAttribute="top" constant="50" id="mgC-8T-YYS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="q5l-WR-led"/>
+                    <navigationItem key="navigationItem" id="q5l-WR-led">
+                        <barButtonItem key="rightBarButtonItem" title="Ingredients" style="plain" id="4aC-KW-zbr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HGy-VX-lvI">
+                                <rect key="frame" x="284.5" y="5" width="109.5" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ingredients"/>
+                            </button>
+                            <connections>
+                                <action selector="buttonPressed:" destination="kmT-SG-SgQ" id="bW9-if-OFs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableViewTwo" destination="yNb-3p-1s7" id="erh-Zp-Blr"/>
                     </connections>
