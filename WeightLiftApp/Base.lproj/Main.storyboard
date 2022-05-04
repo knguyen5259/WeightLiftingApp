@@ -58,6 +58,17 @@
                                     <segue destination="kmT-SG-SgQ" kind="show" id="TQV-a7-PE3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQ0-7x-Qio">
+                                <rect key="frame" x="139" y="70" width="67" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Map">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="DIs-V9-eBI" kind="show" id="xpk-s6-Abc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -346,6 +357,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpK-Jp-jjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2671" y="82"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="f4Z-Lz-nAY">
+            <objects>
+                <viewController id="DIs-V9-eBI" customClass="FourthViewController" customModule="WeightLiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b5F-cE-QSg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WzA-13-foK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OuL-bA-Go0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WzA-13-foK" firstAttribute="top" secondItem="OuL-bA-Go0" secondAttribute="top" id="9av-Ae-S1R"/>
+                            <constraint firstItem="OuL-bA-Go0" firstAttribute="trailing" secondItem="WzA-13-foK" secondAttribute="trailing" id="bgH-Kg-nKa"/>
+                            <constraint firstItem="WzA-13-foK" firstAttribute="leading" secondItem="OuL-bA-Go0" secondAttribute="leading" id="doB-qf-CrV"/>
+                            <constraint firstItem="OuL-bA-Go0" firstAttribute="bottom" secondItem="WzA-13-foK" secondAttribute="bottom" id="eSc-HZ-rlY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Vk-BE-wbb">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" systemItem="camera" id="arz-EC-bBp">
+                                <connections>
+                                    <action selector="whenZoomButtonPressed:" destination="DIs-V9-eBI" id="DY4-M1-i1o"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" systemItem="search" id="vzr-sD-RTH">
+                                <connections>
+                                    <action selector="whenSearchButtonpressed:" destination="DIs-V9-eBI" id="2X7-ZH-fQI"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="WzA-13-foK" id="9JX-rH-bWY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yel-PD-GYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3401" y="82"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O6r-6l-Pa5">

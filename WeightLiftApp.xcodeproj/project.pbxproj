@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021F5D982823086A00A6884E /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021F5D972823086A00A6884E /* FourthViewController.swift */; };
 		025FAC4828187F9900D7DF02 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FAC4728187F9900D7DF02 /* SecondVC.swift */; };
 		02FD9AC328206585001DE720 /* ThridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FD9AC228206585001DE720 /* ThridViewController.swift */; };
 		8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFA281875FD00992FB5 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021F5D972823086A00A6884E /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		025FAC4728187F9900D7DF02 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		02FD9AC228206585001DE720 /* ThridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThridViewController.swift; sourceTree = "<group>"; };
 		8403BAF7281875FD00992FB5 /* WeightLiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightLiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				8403BAFC281875FD00992FB5 /* SceneDelegate.swift */,
 				8403BAFE281875FD00992FB5 /* ViewController.swift */,
 				8403BB00281875FD00992FB5 /* Main.storyboard */,
+				021F5D972823086A00A6884E /* FourthViewController.swift */,
 				02FD9AC228206585001DE720 /* ThridViewController.swift */,
 				025FAC4728187F9900D7DF02 /* SecondVC.swift */,
 				8403BB062818760100992FB5 /* Assets.xcassets */,
@@ -160,6 +163,7 @@
 				8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */,
 				8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */,
 				02FD9AC328206585001DE720 /* ThridViewController.swift in Sources */,
+				021F5D982823086A00A6884E /* FourthViewController.swift in Sources */,
 				025FAC4828187F9900D7DF02 /* SecondVC.swift in Sources */,
 				8403BB05281875FD00992FB5 /* WeightLiftApp.xcdatamodeld in Sources */,
 				8429F2E028205F370097CFA8 /* Persistance.swift in Sources */,
