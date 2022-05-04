@@ -27,13 +27,13 @@ class ThridViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = list[indexPath.row]
         return cell
     }
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        if let url = URL(string: "https://www.blendtec.com/blogs/news/5-energy-pre-workout-smoothie-recipes") {
-            let safariVC = SFSafariViewController(url: url)
+ 
+    @IBAction func buttonPressed(_ sender: Any) {
+        if let urk = URL(string: "https://www.blendtec.com/blogs/news/5-energy-pre-workout-smoothie-recipes") {
+            let sorryVC = SFSafariViewController(url: urk)
             
-            present(safariVC, animated: true, completion: nil)
+            present(sorryVC, animated: true, completion: nil)
+        }
     }
-    
-}
     
 }
