@@ -66,7 +66,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="DIs-V9-eBI" kind="show" id="xpk-s6-Abc"/>
+                                    <segue destination="DIs-V9-eBI" kind="show" id="koE-LM-EO4"/>
                                 </connections>
                             </button>
                         </subviews>
