@@ -12,7 +12,7 @@ class ThridViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet var tableViewTwo: UITableView!
     
-    var list = ["Nut Butter Energy Balls", "Peanut Butter and Banana Smoothie", "Fruit Salad","Vanilla Protien Smoothie", "Cliff Bars", "Pedialyte", "Better Pizza", "Healthy Chicken Quesadillas", "Costco Rotisserie Chicken"]
+    var list = ["Nut Butter Energy Balls", "Peanut Butter and Banana Smoothie", "Fruit Salad","Vanilla Protien Smoothie", "Cliff Bars", "Pedialyte", "Better Pizza", "Healthy Chicken Quesadillas", "Costco Rotisserie Chicken", "Orgain Clean Protein Shake"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
