@@ -31,7 +31,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <connections>
-                                            <segue destination="Qi7-an-jSf" kind="show" id="8hZ-ju-7a8"/>
+                                            <segue destination="Pbv-dJ-UfA" kind="show" identifier="SecondViewControlledSegue" id="LEg-tf-DVV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -88,75 +88,60 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
         </scene>
-        <!--SecondVC-->
-        <scene sceneID="qLg-Fp-n5H">
+        <!--Second View Controller-->
+        <scene sceneID="GPY-3N-3ay">
             <objects>
-                <viewController id="Qi7-an-jSf" customClass="SecondVC" customModule="WeightLiftApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oKS-ku-Alw">
+                <viewController id="Pbv-dJ-UfA" customClass="SecondViewController" customModule="WeightLiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWf-pY-vh9" customClass="SecondViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p5V-z0-5Cu">
-                                <rect key="frame" x="0.0" y="132" width="414" height="725"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OTb-mH-xqx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell123" id="cbQ-1T-EOF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell2" id="qaO-Nr-dG7">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbQ-1T-EOF" id="ZTY-Bf-jQe">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qaO-Nr-dG7" id="vGA-fQ-92i">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PaY-7U-znt">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="Pr2-kS-Eux">
-                                        <nil key="title"/>
-                                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="d8j-Se-KYb">
-                                            <rect key="frame" x="124.5" y="5" width="165" height="34"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="87X-8R-pFA"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Lrh-Qf-5xO"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xYT-IK-hEI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="p5V-z0-5Cu" firstAttribute="leading" secondItem="Lrh-Qf-5xO" secondAttribute="leading" id="CUj-uF-FNC"/>
-                            <constraint firstItem="p5V-z0-5Cu" firstAttribute="top" secondItem="Lrh-Qf-5xO" secondAttribute="top" id="FEB-Io-cgP"/>
-                            <constraint firstItem="Lrh-Qf-5xO" firstAttribute="bottom" secondItem="p5V-z0-5Cu" secondAttribute="bottom" id="mf5-YR-waG"/>
-                            <constraint firstItem="Lrh-Qf-5xO" firstAttribute="trailing" secondItem="p5V-z0-5Cu" secondAttribute="trailing" id="qRQ-LP-MIy"/>
+                            <constraint firstItem="OTb-mH-xqx" firstAttribute="top" secondItem="xYT-IK-hEI" secondAttribute="top" id="YJY-Aw-IGQ"/>
+                            <constraint firstItem="xYT-IK-hEI" firstAttribute="bottom" secondItem="OTb-mH-xqx" secondAttribute="bottom" id="bU3-fw-a8r"/>
+                            <constraint firstItem="xYT-IK-hEI" firstAttribute="trailing" secondItem="OTb-mH-xqx" secondAttribute="trailing" id="nkK-9K-ypn"/>
+                            <constraint firstItem="OTb-mH-xqx" firstAttribute="leading" secondItem="xYT-IK-hEI" secondAttribute="leading" id="o8Y-3m-Lcx"/>
                         </constraints>
                     </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" id="FxB-Eb-Nxa">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="phU-1D-1lV">
+                            <rect key="frame" x="191" y="5" width="32" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="hDb-yc-xig">
+                            <connections>
+                                <action selector="whenButtonPressed:" destination="Pbv-dJ-UfA" id="4gy-Tq-hPa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="OTb-mH-xqx" id="jfa-14-fTY"/>
+                        <outlet property="textField" destination="phU-1D-1lV" id="asc-KT-Q7X"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ass-Ap-MpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="eU2-Eq-95q"/>
-                <tapGestureRecognizer id="dxy-LU-Uoa"/>
-                <tapGestureRecognizer id="2si-yG-ouN"/>
-                <tapGestureRecognizer id="5TY-3a-YG5"/>
-                <tapGestureRecognizer id="hoU-fG-SBb"/>
-                <tapGestureRecognizer id="GsD-0k-Gqg"/>
-                <tapGestureRecognizer id="zVS-KE-3PJ"/>
-                <tapGestureRecognizer id="C6B-1a-t1h"/>
-                <tapGestureRecognizer id="psD-iE-Hct"/>
-                <tapGestureRecognizer id="9Gx-ZU-9qG"/>
-                <tapGestureRecognizer id="XPF-Ax-NIT"/>
-                <tapGestureRecognizer id="YBa-Y2-Jbe"/>
-                <tapGestureRecognizer id="Rsy-Ie-qTS"/>
-                <tapGestureRecognizer id="Hgv-z6-4t8"/>
-                <tapGestureRecognizer id="TOx-2i-c4h"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNj-FM-eZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1882.608695652174" y="81.696428571428569"/>
+            <point key="canvasLocation" x="1901" y="647"/>
         </scene>
         <!--Thrid View Controller-->
         <scene sceneID="nBE-vf-Qr4">
@@ -252,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yel-PD-GYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3401" y="82"/>
+            <point key="canvasLocation" x="1935" y="-753"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O6r-6l-Pa5">

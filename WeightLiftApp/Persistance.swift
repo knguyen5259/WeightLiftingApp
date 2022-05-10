@@ -9,42 +9,59 @@ import UIKit
 import CoreData
 import Foundation
 
-func save(_ name: String) {
-  
-    guard let appDelegate =
-      UIApplication.shared.delegate as? AppDelegate else {
-      return
+class Persistance {
+
+    public static func save(_ excercise: String, _ dayToUse: String) -> Exercise? {
+      
+        guard let appDelegate =
+          UIApplication.shared.delegate as? AppDelegate else {
+          return nil
+        }
+      
+        let managedContext = appDelegate.persistentContainer.viewContext
+      
+        let entity = NSEntityDescription.entity(forEntityName: "Exercise", in: managedContext)!
+
+        let day = NSManagedObject(entity: entity, insertInto: managedContext)
+      
+        day.setValue(excercise, forKeyPath: "name")
+        day.setValue(dayToUse, forKey: "day")
+      
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+        
+        return day as! Exercise
     }
-  
-    let managedContext = appDelegate.persistentContainer.viewContext
-  
-    let entity = NSEntityDescription.entity(forEntityName: "Day", in: managedContext)!
-  
-    let day = NSManagedObject(entity: entity, insertInto: managedContext)
-  
-    day.setValue(name, forKeyPath: "name")
-  
-    do {
-        try managedContext.save()
-    } catch let error as NSError {
-        print("Could not save. \(error), \(error.userInfo)")
+
+    public static func get(_ dayToUse: String) -> [Exercise]? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil }
+      
+        let managedContext = appDelegate.persistentContainer.viewContext
+      
+        let fetchRequest = NSFetchRequest<Exercise>(entityName: "Exercise")
+        var managedObjects: [Exercise] = []
+        do {
+            managedObjects = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+            return nil
+        }
+        
+        var finalObjects: [Exercise] = []
+        
+        for x in managedObjects {
+            if x.day == dayToUse {
+                finalObjects.append(x)
+            }
+        }
+        
+        return finalObjects
     }
+
+
+
+    
 }
-
-func get() -> [NSManagedObject]? {
-    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil }
-  
-    let managedContext = appDelegate.persistentContainer.viewContext
-  
-    let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
-  
-    do {
-        return try managedContext.fetch(fetchRequest)
-    } catch let error as NSError {
-      print("Could not fetch. \(error), \(error.userInfo)")
-    }
-
-    return nil
-}
-
-
