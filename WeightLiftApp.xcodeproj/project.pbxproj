@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		021F5D982823086A00A6884E /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021F5D972823086A00A6884E /* FourthViewController.swift */; };
-		025FAC4828187F9900D7DF02 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FAC4728187F9900D7DF02 /* SecondVC.swift */; };
 		02FD9AC328206585001DE720 /* ThridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FD9AC228206585001DE720 /* ThridViewController.swift */; };
 		8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFA281875FD00992FB5 /* AppDelegate.swift */; };
 		8403BAFD281875FD00992FB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFC281875FD00992FB5 /* SceneDelegate.swift */; };
@@ -18,13 +17,13 @@
 		8403BB072818760100992FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8403BB062818760100992FB5 /* Assets.xcassets */; };
 		8403BB0A2818760100992FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403BB082818760100992FB5 /* LaunchScreen.storyboard */; };
 		8429F2E028205F370097CFA8 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429F2DF28205F370097CFA8 /* Persistance.swift */; };
-		8456B496281B1206004533FF /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B494281B1206004533FF /* Day+CoreDataClass.swift */; };
-		8456B497281B1206004533FF /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456B495281B1206004533FF /* Day+CoreDataProperties.swift */; };
+		8468E0E8282AD78D004FC24B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468E0E7282AD78D004FC24B /* SecondViewController.swift */; };
+		8468E0EB282ADCA0004FC24B /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468E0E9282ADCA0004FC24B /* Exercise+CoreDataClass.swift */; };
+		8468E0EC282ADCA1004FC24B /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468E0EA282ADCA0004FC24B /* Exercise+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		021F5D972823086A00A6884E /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
-		025FAC4728187F9900D7DF02 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		02FD9AC228206585001DE720 /* ThridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThridViewController.swift; sourceTree = "<group>"; };
 		8403BAF7281875FD00992FB5 /* WeightLiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightLiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403BAFA281875FD00992FB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +35,9 @@
 		8403BB092818760100992FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8403BB0B2818760100992FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8429F2DF28205F370097CFA8 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
-		8456B494281B1206004533FF /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8456B495281B1206004533FF /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8468E0E7282AD78D004FC24B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8468E0E9282ADCA0004FC24B /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8468E0EA282ADCA0004FC24B /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 		8403BAEE281875FD00992FB5 = {
 			isa = PBXGroup;
 			children = (
-				8456B494281B1206004533FF /* Day+CoreDataClass.swift */,
-				8456B495281B1206004533FF /* Day+CoreDataProperties.swift */,
+				8468E0E9282ADCA0004FC24B /* Exercise+CoreDataClass.swift */,
+				8468E0EA282ADCA0004FC24B /* Exercise+CoreDataProperties.swift */,
 				8403BAF9281875FD00992FB5 /* WeightLiftApp */,
 				8403BAF8281875FD00992FB5 /* Products */,
 			);
@@ -76,9 +76,9 @@
 				8403BAFC281875FD00992FB5 /* SceneDelegate.swift */,
 				8403BAFE281875FD00992FB5 /* ViewController.swift */,
 				8403BB00281875FD00992FB5 /* Main.storyboard */,
+				8468E0E7282AD78D004FC24B /* SecondViewController.swift */,
 				021F5D972823086A00A6884E /* FourthViewController.swift */,
 				02FD9AC228206585001DE720 /* ThridViewController.swift */,
-				025FAC4728187F9900D7DF02 /* SecondVC.swift */,
 				8403BB062818760100992FB5 /* Assets.xcassets */,
 				8403BB082818760100992FB5 /* LaunchScreen.storyboard */,
 				8403BB0B2818760100992FB5 /* Info.plist */,
@@ -159,16 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8456B496281B1206004533FF /* Day+CoreDataClass.swift in Sources */,
 				8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */,
 				8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */,
 				02FD9AC328206585001DE720 /* ThridViewController.swift in Sources */,
 				021F5D982823086A00A6884E /* FourthViewController.swift in Sources */,
-				025FAC4828187F9900D7DF02 /* SecondVC.swift in Sources */,
 				8403BB05281875FD00992FB5 /* WeightLiftApp.xcdatamodeld in Sources */,
+				8468E0EB282ADCA0004FC24B /* Exercise+CoreDataClass.swift in Sources */,
 				8429F2E028205F370097CFA8 /* Persistance.swift in Sources */,
+				8468E0EC282ADCA1004FC24B /* Exercise+CoreDataProperties.swift in Sources */,
 				8403BAFD281875FD00992FB5 /* SceneDelegate.swift in Sources */,
-				8456B497281B1206004533FF /* Day+CoreDataProperties.swift in Sources */,
+				8468E0E8282AD78D004FC24B /* SecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

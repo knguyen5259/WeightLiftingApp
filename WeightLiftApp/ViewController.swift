@@ -30,8 +30,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //
+        guard let identifier = segue.identifier else { return }
+        if identifier == "SecondViewControlledSegue" {
+            guard let selectedRow = tableView.indexPathForSelectedRow?.row else {return}
+            let nvc = segue.destination as! SecondViewController
+            nvc.day = days[selectedRow]
+        }
     }
+    
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         if let url = URL(string: "https://www.youtube.com/watch?v=cQO2V65eK3M&t=205s") {
             let safariVC = SFSafariViewController(url: url)
