@@ -13,6 +13,7 @@ class SecondViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var Button: UIBarButtonItem!
     
     var exercises: [Exercise] = []
     var day: String = ""
@@ -62,4 +63,13 @@ class SecondViewController: UIViewController, UITableViewDataSource {
         tableView.reloadData()
     }
     
+  
+    @IBAction func henButtonPressed(_ sender: UIButton) {
+        for reset in exercises {
+            Persistance.delete(reset)
+        }
+        exercises = []
+        tableView.reloadData()
+    }
 }
+

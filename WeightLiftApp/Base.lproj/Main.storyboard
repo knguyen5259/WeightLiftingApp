@@ -135,13 +135,27 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="hDb-yc-xig">
-                            <connections>
-                                <action selector="whenButtonPressed:" destination="Pbv-dJ-UfA" id="4gy-Tq-hPa"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" id="hDb-yc-xig">
+                                <connections>
+                                    <action selector="whenButtonPressed:" destination="Pbv-dJ-UfA" id="4gy-Tq-hPa"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="YoF-nB-R9Z">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="h9s-OX-u1k">
+                                    <rect key="frame" x="260.5" y="5" width="92" height="34.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                    <connections>
+                                        <action selector="henButtonPressed:" destination="Pbv-dJ-UfA" eventType="touchUpInside" id="V1x-Ws-KO8"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="Button" destination="YoF-nB-R9Z" id="8vg-71-Mfm"/>
                         <outlet property="Label" destination="bG3-eu-3U1" id="JHN-dx-bjS"/>
                         <outlet property="tableView" destination="OTb-mH-xqx" id="jfa-14-fTY"/>
                         <outlet property="textField" destination="phU-1D-1lV" id="asc-KT-Q7X"/>
