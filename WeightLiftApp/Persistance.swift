@@ -66,7 +66,5 @@ class Persistance {
         let managedContext = appDelegate.persistentContainer.viewContext
         managedContext.delete(excercise)
     }
-
-
     
 }

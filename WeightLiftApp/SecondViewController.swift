@@ -34,6 +34,18 @@ class SecondViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            Persistance.delete(self.exercises[indexPath.row])
+            self.exercises.remove(at: indexPath.row)
+            self.tableView.reloadData()
+        }
+    }
+    
     @IBAction func whenButtonPressed(_ sender: UIBarButtonItem) {
         guard let text = textField.text else { return }
         
