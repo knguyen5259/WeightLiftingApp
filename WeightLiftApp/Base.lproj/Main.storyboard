@@ -142,6 +142,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="Label" destination="bG3-eu-3U1" id="JHN-dx-bjS"/>
                         <outlet property="tableView" destination="OTb-mH-xqx" id="jfa-14-fTY"/>
                         <outlet property="textField" destination="phU-1D-1lV" id="asc-KT-Q7X"/>
                     </connections>

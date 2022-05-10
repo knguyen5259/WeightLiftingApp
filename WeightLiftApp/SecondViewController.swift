@@ -12,6 +12,7 @@ class SecondViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var Label: UILabel!
     
     var exercises: [Exercise] = []
     var day: String = ""
@@ -21,6 +22,7 @@ class SecondViewController: UIViewController, UITableViewDataSource {
         tableView.dataSource = self
         if (day != "") {
             exercises = Persistance.get(day) ?? []
+            Label.text = day
         }
     }
     
