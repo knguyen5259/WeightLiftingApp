@@ -60,7 +60,12 @@ class Persistance {
         
         return finalObjects
     }
-
+    
+    public static func delete(_ excercise: Exercise) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        managedContext.delete(excercise)
+    }
 
 
     
