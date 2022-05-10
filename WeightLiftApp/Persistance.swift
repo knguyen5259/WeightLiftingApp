@@ -65,6 +65,12 @@ class Persistance {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainer.viewContext
         managedContext.delete(excercise)
+
+        do {
+            try managedContext.save()
+        } catch {
+            
+        }
     }
     
 }
