@@ -130,7 +130,7 @@
                     <navigationItem key="navigationItem" id="FxB-Eb-Nxa">
                         <nil key="title"/>
                         <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Workout Here" minimumFontSize="17" id="phU-1D-1lV">
-                            <rect key="frame" x="191" y="5" width="32" height="34"/>
+                            <rect key="frame" x="108" y="5" width="146.5" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>

@@ -25,6 +25,7 @@ class SecondViewController: UIViewController, UITableViewDataSource {
             exercises = Persistance.get(day) ?? []
             Label.text = day
         }
+        textField.clearButtonMode = .whileEditing
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
