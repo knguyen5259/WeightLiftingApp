@@ -19,9 +19,11 @@ class ThridViewController: UIViewController, UITableViewDataSource {
         
         tableViewTwo.dataSource = self
     }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return food.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewTwo.dequeueReusableCell(withIdentifier: "myCellTwo", for: indexPath)
         cell.textLabel?.text = Array(food.keys)[indexPath.row]
