@@ -184,6 +184,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="THe-dN-fso" kind="show" id="adt-zo-k1B"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -217,6 +220,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpK-Jp-jjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2671" y="82"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nRq-Pr-ZSb">
+            <objects>
+                <viewController id="THe-dN-fso" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgf-ce-sVe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YWq-CH-pKG">
+                                <rect key="frame" x="87" y="312" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dw6-qO-PpD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q7J-D0-Ahy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRW-TL-cE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3829" y="222"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="f4Z-Lz-nAY">
