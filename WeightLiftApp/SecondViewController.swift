@@ -72,5 +72,6 @@ class SecondViewController: UIViewController, UITableViewDataSource {
         exercises = []
         tableView.reloadData()
     }
+    
 }
 
