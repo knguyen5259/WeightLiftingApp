@@ -2,24 +2,24 @@
 //  sixthViewController.swift
 //  WeightLiftApp
 //
-//  Created by furqan amanji on 5/16/22.
+//  Created by furqan amanji on 5/18/22.
 //
 
 import UIKit
 
-class sixthViewController: UIViewController, UITableViewDataSource{
+class sixthViewController: UIViewController, UITableViewDataSource {
 
-
+    
     @IBOutlet weak var TableView: UITableView!
     
-    var videoworkouts = ["curls", "bench", "squat", "deadlift"]
+    var videoworkouts = ["Curls", "Bench", "Squat", "Deadlift"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        TableView.dataSource = self
-    }
 
+        TableView.dataSource = self
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videoworkouts.count
     }
@@ -28,8 +28,5 @@ class sixthViewController: UIViewController, UITableViewDataSource{
         let Cell6 = TableView.dequeueReusableCell(withIdentifier: "Cell6", for: indexPath)
         Cell6.textLabel?.text = videoworkouts[indexPath.row]
         return Cell6
-        
-  
     }
-    
 }

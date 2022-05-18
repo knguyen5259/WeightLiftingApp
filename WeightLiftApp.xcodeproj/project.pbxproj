@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		021F5D982823086A00A6884E /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021F5D972823086A00A6884E /* FourthViewController.swift */; };
 		02FD9AC328206585001DE720 /* ThridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FD9AC228206585001DE720 /* ThridViewController.swift */; };
-		34DCC8B02832D9C700F1D881 /* sixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DCC8AF2832D9C700F1D881 /* sixthViewController.swift */; };
+		344DB78328357B720015230C /* sixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344DB78228357B720015230C /* sixthViewController.swift */; };
 		8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFA281875FD00992FB5 /* AppDelegate.swift */; };
 		8403BAFD281875FD00992FB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFC281875FD00992FB5 /* SceneDelegate.swift */; };
 		8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403BAFE281875FD00992FB5 /* ViewController.swift */; };
@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		021F5D972823086A00A6884E /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		02FD9AC228206585001DE720 /* ThridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThridViewController.swift; sourceTree = "<group>"; };
-		34DCC8AF2832D9C700F1D881 /* sixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixthViewController.swift; sourceTree = "<group>"; };
+		344DB78228357B720015230C /* sixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixthViewController.swift; sourceTree = "<group>"; };
 		8403BAF7281875FD00992FB5 /* WeightLiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightLiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403BAFA281875FD00992FB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8403BAFC281875FD00992FB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,8 +79,8 @@
 				8403BAFA281875FD00992FB5 /* AppDelegate.swift */,
 				8403BAFC281875FD00992FB5 /* SceneDelegate.swift */,
 				8403BAFE281875FD00992FB5 /* ViewController.swift */,
+				344DB78228357B720015230C /* sixthViewController.swift */,
 				8403BB00281875FD00992FB5 /* Main.storyboard */,
-				34DCC8AF2832D9C700F1D881 /* sixthViewController.swift */,
 				8468E0E7282AD78D004FC24B /* SecondViewController.swift */,
 				021F5D972823086A00A6884E /* FourthViewController.swift */,
 				02FD9AC228206585001DE720 /* ThridViewController.swift */,
@@ -168,7 +168,7 @@
 				8403BAFF281875FD00992FB5 /* ViewController.swift in Sources */,
 				8403BAFB281875FD00992FB5 /* AppDelegate.swift in Sources */,
 				02FD9AC328206585001DE720 /* ThridViewController.swift in Sources */,
-				34DCC8B02832D9C700F1D881 /* sixthViewController.swift in Sources */,
+				344DB78328357B720015230C /* sixthViewController.swift in Sources */,
 				84DE720F2832D85600F4B521 /* FifthViewController.swift in Sources */,
 				021F5D982823086A00A6884E /* FourthViewController.swift in Sources */,
 				8403BB05281875FD00992FB5 /* WeightLiftApp.xcdatamodeld in Sources */,
