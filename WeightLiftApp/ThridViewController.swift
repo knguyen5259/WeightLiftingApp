@@ -36,4 +36,10 @@ class ThridViewController: UIViewController, UITableViewDataSource {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! FifthViewController
+        guard let selectedRow = tableViewTwo.indexPathForSelectedRow?.row else {return}
+        nvc.link = food[Array(food.keys)[selectedRow]] ?? ""
+    }
+    
 }
