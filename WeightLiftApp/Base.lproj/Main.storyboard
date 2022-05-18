@@ -249,7 +249,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="jwb-cG-sJG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell6" rowHeight="58" id="jwb-cG-sJG">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jwb-cG-sJG" id="zPH-Qo-8dK">
@@ -264,7 +264,6 @@
                         <viewLayoutGuide key="safeArea" id="Nmz-yN-n2A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Nmz-yN-n2A" firstAttribute="bottom" secondItem="U1y-cJ-M9Q" secondAttribute="bottom" id="GJ6-PP-zfY"/>
                             <constraint firstItem="U1y-cJ-M9Q" firstAttribute="top" secondItem="Nmz-yN-n2A" secondAttribute="top" id="Hqf-Y3-at0"/>
                             <constraint firstItem="U1y-cJ-M9Q" firstAttribute="leading" secondItem="Nmz-yN-n2A" secondAttribute="leading" id="WQ9-dA-9o9"/>
                         </constraints>

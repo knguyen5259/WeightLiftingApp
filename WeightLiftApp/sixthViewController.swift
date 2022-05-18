@@ -25,9 +25,9 @@ class sixthViewController: UIViewController, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell6 = TableView.dequeueReusableCell(withIdentifier: "Cell6", for: indexPath)
-        cell6.textLabel?.text = videoworkouts[indexPath.row]
-        return cell6
+        let Cell6 = TableView.dequeueReusableCell(withIdentifier: "Cell6", for: indexPath)
+        Cell6.textLabel?.text = videoworkouts[indexPath.row]
+        return Cell6
         
   
     }
