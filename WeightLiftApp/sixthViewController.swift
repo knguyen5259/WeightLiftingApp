@@ -12,7 +12,7 @@ class sixthViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var TableView: UITableView!
     
-    var videoworkouts = ["Curls", "Bench", "Squat", "Deadlift", "Plank"]
+    var videoworkouts = ["Curls", "Bench", "Squat", "Deadlift", "Plank", "PushUp", "situp"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
