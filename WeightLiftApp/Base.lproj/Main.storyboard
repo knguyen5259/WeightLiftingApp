@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ib8-fr-Nfh">
-                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="121" width="414" height="741"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemOrangeColor"/>
                                 <prototypes>
@@ -149,7 +149,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="hDb-yc-xig">
+                            <barButtonItem title="add" id="hDb-yc-xig">
                                 <connections>
                                     <action selector="whenButtonPressed:" destination="Pbv-dJ-UfA" id="4gy-Tq-hPa"/>
                                 </connections>
@@ -306,7 +306,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="1Vk-BE-wbb">
                         <rightBarButtonItems>
-                            <barButtonItem style="plain" systemItem="camera" id="arz-EC-bBp">
+                            <barButtonItem title="Zoom" style="plain" id="arz-EC-bBp">
                                 <connections>
                                     <action selector="whenZoomButtonPressed:" destination="DIs-V9-eBI" id="DY4-M1-i1o"/>
                                 </connections>

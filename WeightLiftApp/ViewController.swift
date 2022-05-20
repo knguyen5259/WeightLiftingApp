@@ -17,6 +17,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        
+        let alert = UIAlertController(title: "Welcome to WeightLiftApp 1.0", message: nil, preferredStyle: UIAlertController.Style.alert)
+        
+        let ok = UIAlertAction(title: "Ok", style: .default) { action in
+        }
+        
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
